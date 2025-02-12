@@ -1,4 +1,4 @@
-import { Text, View } from 'react-native';
+import {Text, View} from 'react-native';
 
 export default function App() {
     return (
@@ -9,16 +9,28 @@ export default function App() {
             justifyContent: 'center',
             backgroundColor: '#BBB',
         }}>
-            <View style={{ flexDirection: "row" }}>
-                <Text style={{ fontSize: 20 }}>Hello React Native</Text>
-                <Text style={{ fontSize: 22 }}>Let's program in</Text>
-                <Text style={{ fontSize: 25 }}>React Native</Text>
+            <View style={{
+                alignItems: "center",
+                flexDirection: "column",
+                justifyContent: "center",
+                flex: 0.5,
+                backgroundColor: '#CCC'
+            }}>
+                <Text style={{fontSize: 20}}>Hello</Text>
+                <Text style={{fontSize: 22}}>Let's program in</Text>
+                <Text style={{fontSize: 25}}>React Native</Text>
             </View>
 
-            <View>
-                <Text style={{ fontSize: 20 }}>Hello React Native</Text>
-                <Text style={{ fontSize: 22 }}>Let's program in</Text>
-                <Text style={{ fontSize: 25 }}>React Native</Text>
+            <View style={{
+                flexDirection: "column",
+                flex: 0.5,
+                backgroundColor: '#DDD',
+                justifyContent: "center",
+                alignItems: 'center'
+            }}>
+                <Text style={{fontSize: 20}}>Hello</Text>
+                <Text style={{fontSize: 22}}>Let's program in</Text>
+                <Text style={{fontSize: 25}}>React Native</Text>
             </View>
         </View>
     )
