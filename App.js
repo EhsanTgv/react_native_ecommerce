@@ -2,32 +2,14 @@ import {Text, View} from 'react-native';
 
 export default function App() {
     return (
-        <View style={{
-            flexDirection: 'column',
-            flex: 1,
-            alignItems: 'center',
-            justifyContent: 'center',
-            backgroundColor: '#BBB',
-        }}>
-            <View style={{
-                alignItems: "center",
-                flexDirection: "column",
-                justifyContent: "center",
-                flex: 0.5,
-                backgroundColor: '#CCC'
-            }}>
+        <View style={styles.container}>
+            <View style={styles.topBox}>
                 <Text style={{fontSize: 20}}>Hello</Text>
                 <Text style={{fontSize: 22}}>Let's program in</Text>
                 <Text style={{fontSize: 25}}>React Native</Text>
             </View>
 
-            <View style={{
-                flexDirection: "column",
-                flex: 0.5,
-                backgroundColor: '#DDD',
-                justifyContent: "center",
-                alignItems: 'center'
-            }}>
+            <View style={styles.bottomBox}>
                 <Text style={{fontSize: 20}}>Hello</Text>
                 <Text style={{fontSize: 22}}>Let's program in</Text>
                 <Text style={{fontSize: 25}}>React Native</Text>
@@ -35,3 +17,27 @@ export default function App() {
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flexDirection: 'column',
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: '#bbb',
+    },
+    topBox: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexDirection: 'column',
+        flex: 0.5,
+        backgroundColor: '#ccc',
+    },
+    bottomBox: {
+        flexDirection: 'column',
+        flex: 0.5,
+        backgroundColor: '#ddd',
+        justifyContent: 'center',
+        alignItems: 'center',
+    }
+});
